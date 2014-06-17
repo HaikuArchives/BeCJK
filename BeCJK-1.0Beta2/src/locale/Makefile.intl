@@ -1,0 +1,9 @@
+POTFILES = $(shell ls ../*.h ../*.cpp)
+
+all: becjk.po
+
+becjk.po: $(POTFILES)
+	xgettext --default-domain=becjk --keyword=_ --keyword=N_ --omit-header $(POTFILES)
+
+clean:
+	rm -f becjk.po
