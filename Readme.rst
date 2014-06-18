@@ -30,6 +30,7 @@ CopyRights:
 =======================
 
 copyright: (C) 2001-2002 Anthony Lee <anthonylee@eLong.com>
+
 * BeSavager	---	freeware under LGPL2
 * BeCJK-AddOn	---	freeware under GPL2
 * BeCJK-Devel	---	freeware under LGPL2
