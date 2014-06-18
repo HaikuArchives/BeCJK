@@ -45,6 +45,7 @@
 extern "C" _EXPORT BInputServerMethod* instantiate_input_method();
 
 class SInputAddOn;
+class SInputAddOnLooper;
 class SInputPanel;
 class SInputModule;
 class SInputSelector;

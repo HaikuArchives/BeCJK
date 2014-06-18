@@ -4,7 +4,7 @@
 
 
 script_besavager = '#besavager/SConscript'
-script_becjk = '#becjk/SConscript'
+script_becjk = '#src/SConscript'
 script_data = '#data/SConscript'
 
 SConscript(script_data)
