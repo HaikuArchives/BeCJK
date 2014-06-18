@@ -1545,18 +1545,18 @@ SInputAddOn::LoadAllGeneralModules()
 {
 	BPath path;
 
-	if(find_directory(B_BEOS_ETC_DIRECTORY, &path) == B_OK)
+	if(find_directory( B_SYSTEM_DATA_DIRECTORY, &path) == B_OK)
 	{
-		path.Append("BeCJK/dict");
+		path.Append("BeCJK/dicts");
 		LoadGeneralModules(&path);
 	}
 
 	char * env_safemode = getenv("SAFEMODE");
 	if(!env_safemode || strcmp(env_safemode, "yes") != 0)
 	{
-		if(find_directory(B_USER_CONFIG_DIRECTORY, &path) == B_OK)
+		if(find_directory(B_USER_DATA_DIRECTORY, &path) == B_OK)
 		{
-			path.Append("etc/BeCJK/dict");
+			path.Append("BeCJK/dicts");
 			LoadGeneralModules(&path);
 		}
 	}
@@ -1680,7 +1680,7 @@ SInputAddOn::LoadAllModules()
 
 	BPath path;
 
-	if(find_directory(B_BEOS_ADDONS_DIRECTORY, &path) == B_OK)
+	if(find_directory(B_SYSTEM_ADDONS_DIRECTORY, &path) == B_OK)
 	{
 		path.Append("BeCJK");
 		LoadModules(&path);
@@ -1819,9 +1819,9 @@ SInputAddOn::CountModules()
 
 	BPath path;
 
-	if(find_directory(B_BEOS_ETC_DIRECTORY, &path) == B_OK)
+	if(find_directory(B_SYSTEM_DATA_DIRECTORY, &path) == B_OK)
 	{
-		path.Append("BeCJK/dict");
+		path.Append("BeCJK/dicts");
 		BDirectory dir(path.Path());
 
 		status_t err = B_NO_ERROR; 
@@ -1836,7 +1836,7 @@ SInputAddOn::CountModules()
 		}
 	}
 
-	if(find_directory(B_BEOS_ADDONS_DIRECTORY, &path) == B_OK)
+	if(find_directory(B_SYSTEM_ADDONS_DIRECTORY, &path) == B_OK)
 	{
 		path.Append("BeCJK");
 		BDirectory dir(path.Path());
@@ -1856,9 +1856,9 @@ SInputAddOn::CountModules()
 	char * env_safemode = getenv("SAFEMODE");
 	if(!env_safemode || strcmp(env_safemode, "yes") != 0)
 	{
-		if(find_directory(B_USER_CONFIG_DIRECTORY, &path) == B_OK)
+		if(find_directory(B_USER_DATA_DIRECTORY, &path) == B_OK)
 		{
-			path.Append("etc/BeCJK/dict");
+			path.Append("BeCJK/dicts");
 			BDirectory dir(path.Path());
 
 			status_t err = B_NO_ERROR; 
