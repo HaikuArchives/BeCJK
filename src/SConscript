@@ -1,6 +1,6 @@
 import os
 
-dst = BeCJK'
+dst = 'BeCJK'
 dst_name = '/boot/system/add-ons/input_server/methods/BeCJK'
 
 srcs = Glob('*.cpp')
