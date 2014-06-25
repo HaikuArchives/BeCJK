@@ -1,9 +1,8 @@
-
-dst_path = "/boot/system/data/BeCJK/dicts"
+Import("env")
 
 src_dicts = [
-		'#data/dicts/ChangJie_SC'
-		'#data/dicts/ChangJie_TC'
+		'#data/dicts/ChangJie_SC',
+		'#data/dicts/ChangJie_TC',
 		'#data/dicts/PinYin_SC', 
 		'#data/dicts/ZRM_SC', 
 		'#data/dicts/WuBiZiXing_SC', 
@@ -19,5 +18,4 @@ src_dicts = [
 		'#data/dicts/PinYin_TC'
 ]
 
-env = Environment()
-env.Install(dst_path, src_dicts);
+Return("src_dicts")
