@@ -1550,6 +1550,12 @@ SInputAddOn::LoadAllGeneralModules()
 		path.Append("BeCJK/dicts");
 		LoadGeneralModules(&path);
 	}
+    //add nonpackaged data directory for Haiku with PM
+    if(find_directory( B_SYSTEM_NONPACKAGED_DATA_DIRECTORY, &path) == B_OK)
+    {
+        path.Append("BeCJK/dicts");
+        LoadGeneralModules(&path);
+    }
 
 	char * env_safemode = getenv("SAFEMODE");
 	if(!env_safemode || strcmp(env_safemode, "yes") != 0)
@@ -1835,6 +1841,23 @@ SInputAddOn::CountModules()
 			count++;
 		}
 	}
+    // add non-packaged directory for Haiku with PM
+    if(find_directory(B_SYSTEM_NONPACKAGED_DATA_DIRECTORY, &path) == B_OK)
+    {
+        path.Append("BeCJK/dicts");
+        BDirectory dir(path.Path());
+
+        status_t err = B_NO_ERROR;
+        BEntry entry;
+
+        while(err == B_NO_ERROR)
+        {
+            err = dir.GetNextEntry((BEntry*)&entry, TRUE);
+            if(entry.InitCheck() != B_NO_ERROR) break;
+            if(entry.GetPath(&path) != B_NO_ERROR ) continue;
+            count++;
+        }
+    }
 
 	if(find_directory(B_SYSTEM_ADDONS_DIRECTORY, &path) == B_OK)
 	{
