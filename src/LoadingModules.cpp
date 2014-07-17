@@ -127,8 +127,8 @@ SLoadingModulesViewLight::ReGetBitmap()
 void
 SLoadingModulesViewLight::AttachedToWindow()
 {
-	ReGetBitmap();
-	BView::AttachedToWindow();
+    BView::AttachedToWindow();
+    ReGetBitmap();
 }
 
 
@@ -147,7 +147,6 @@ SLoadingModulesViewLight::DetachedFromWindow()
 void
 SLoadingModulesViewLight::FrameMoved(BPoint new_position)
 {
-	ReGetBitmap();
 	BView::FrameMoved(new_position);
 }
 
@@ -155,7 +154,6 @@ SLoadingModulesViewLight::FrameMoved(BPoint new_position)
 void
 SLoadingModulesViewLight::FrameResized(float new_width, float new_height)
 {
-	ReGetBitmap();
 	BView::FrameResized(new_width, new_height);
 }
 
@@ -329,8 +327,8 @@ SLoadingModulesView::ReGetBitmap()
 void
 SLoadingModulesView::AttachedToWindow()
 {
-	ReGetBitmap();
 	BView::AttachedToWindow();
+    ReGetBitmap();
 }
 
 
@@ -347,7 +345,6 @@ SLoadingModulesView::DetachedFromWindow()
 void
 SLoadingModulesView::FrameMoved(BPoint new_position)
 {
-	ReGetBitmap();
 	BView::FrameMoved(new_position);
 }
 
@@ -355,7 +352,6 @@ SLoadingModulesView::FrameMoved(BPoint new_position)
 void
 SLoadingModulesView::FrameResized(float new_width, float new_height)
 {
-	ReGetBitmap();
 	BView::FrameResized(new_width, new_height);
 }
 
