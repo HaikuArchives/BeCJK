@@ -127,7 +127,6 @@ SLoadingModulesViewLight::ReGetBitmap()
 void
 SLoadingModulesViewLight::AttachedToWindow()
 {
-    BView::AttachedToWindow();
     ReGetBitmap();
 }
 
@@ -327,7 +326,6 @@ SLoadingModulesView::ReGetBitmap()
 void
 SLoadingModulesView::AttachedToWindow()
 {
-	BView::AttachedToWindow();
     ReGetBitmap();
 }
 

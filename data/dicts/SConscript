@@ -1,21 +1,5 @@
 Import("env")
 
-src_dicts = [
-		'#data/dicts/ChangJie_SC',
-		'#data/dicts/ChangJie_TC',
-		'#data/dicts/PinYin_SC', 
-		'#data/dicts/ZRM_SC', 
-		'#data/dicts/WuBiZiXing_SC', 
-		'#data/dicts/ShuangPin_SC',
-		'#data/dicts/ROMKANA_JP', 
-		'#data/dicts/Phone_SC',
-		'#data/dicts/TCODE_JP', 
-		'#data/dicts/HanGul_KO', 
-		'#data/dicts/PinYin_GBK_SC', 
-		'#data/dicts/ChangJie_TC',
-		'#data/dicts/HanJa_KO', 
-		'#data/dicts/Phone_TC', 
-		'#data/dicts/PinYin_TC'
-]
+src_dicts = env.Glob('*_*')
 
 Return("src_dicts")

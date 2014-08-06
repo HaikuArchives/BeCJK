@@ -16,6 +16,21 @@ Pre-requisite software
 * mercurial, get current code of BeCJK
 * scons, tools for building BeCJK
 
+building from source
+--------------------------------------
+~path/to/source> scons -Q
+
+Install & Uninstall
+=======================
+
+install from source
+-----------------------
+~path/to/source> scons -Q /boot/system/
+
+uninstall from source
+-----------------------
+~path/to/source> scons -c /boot/system/
+
 Components
 =======================
 
