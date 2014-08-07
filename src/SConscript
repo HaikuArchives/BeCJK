@@ -7,7 +7,7 @@ dst = 'BeCJK'
 srcs = env.Glob('*.cpp')
 libs = ['be', 'besavager']
 lib_path = os.getenv('LIBRARY_PATH').split(':') + ['../besavager']
-inc_path = os.getenv('BEINCLUDES').split(';')+['../']
+inc_path = ['../']
 
 dst_shared = env.SharedLibrary(target=dst, source=srcs, LIBS=libs, LIBPATH=lib_path, CPPPATH=inc_path)
 Return("dst_shared")
