@@ -1,38 +1,13 @@
-################################
 # main building script for BeCJK
-################################
 
-
-#################################
-#   global configs for building
-#################################
-# flag_package = 'package' or 'non-package'
-flag_package = 'non-package'
-
-#################################
-#   path for library and BeCJK & dicts
-#################################
-besavager_path = ''
-becjk_addon = ''
-dicts_path = ''
+# path for library and BeCJK & dicts
+besavager_path = './generated/lib/besavager'
+becjk_addon = './generated/add-ons/input_server/methods/BeCJK'
+dicts_path = './generated/data/BeCJK/dicts'
 
 env = Environment()
-
 Export("env")
 
-if('package' == flag_package):
-    besavager_path = '/boot/system/lib/besavager'
-    becjk_addon = '/boot/system/add-ons/input_server/methods/BeCJK'
-    dicts_path = '/boot/system/data/BeCJK/dicts'
-elif('non-package' == flag_package):
-    besavager_path = '/boot/system/non-packaged/lib/besavager'
-    becjk_addon = '/boot/system/non-packaged/add-ons/input_server/methods/BeCJK'
-    dicts_path = '/boot/system/non-packaged/data/BeCJK/dicts'
-else:
-    besavager_path = './tmp/besavager'
-    becjk_addon = './tmp/BeCJK'
-    dicts_path = './tmp/dicts'
-    
 
 # besavager install
 besavager_script = '#besavager/SConscript'
