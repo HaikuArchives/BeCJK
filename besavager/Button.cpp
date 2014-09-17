@@ -20,6 +20,7 @@
 // Button supported Tooltip and Bitmap
 
 #include <string.h>
+#include <strings.h>
 #include <sys/utsname.h>
 
 #include "Button.h"

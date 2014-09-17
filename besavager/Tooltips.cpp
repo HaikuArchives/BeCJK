@@ -20,6 +20,7 @@
 // Tooltip Manager
 
 #include <string.h>
+#include <strings.h>
 #include <sys/utsname.h>
 
 #include "Tooltips.h"

@@ -20,6 +20,7 @@
 // Hash Table yanked from GLIB
 
 
+#include <strings.h>
 #include "HashTable.h"
 #include "Strings.h"
 
