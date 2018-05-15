@@ -8,6 +8,7 @@ dicts_path = './generated/data/BeCJK/dicts'
 env = Environment()
 Export("env")
 
+env["CXXFLAGS"] += ["-fpermissive"]
 
 # besavager install
 besavager_script = '#besavager/SConscript'
