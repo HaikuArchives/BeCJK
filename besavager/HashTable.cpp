@@ -121,7 +121,7 @@ SHashTable::~SHashTable()
 uint32
 SHashTable::Hash(const void* key)
 {
-	return((uint32)key);
+	return((uintptr_t)key);
 }
 
 
