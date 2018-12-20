@@ -3,18 +3,13 @@
 ![screenshot](screenshot.png)
 
 BeCJK, is an input method for the legancy BeOS, first Developed by
-Anthony.Lee.
-
-Now, this copy of code is gotten from Andraw Bachmann.
-
-As time goes on, expecially with Haiku PM, BeCJK can't work normally on
-recently release of Haiku.
+Anthony.Lee. This copy was obtained from Andrew Bachmann.
 
 # Building
 
 ## Pre-requisite software
 
-  - mercurial, get current code of BeCJK
+  - git, get current code of BeCJK
   - scons, tools for building BeCJK
 
 ## building from source
