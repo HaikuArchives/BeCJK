@@ -2,7 +2,7 @@
 
 ![screenshot](screenshot.png)
 
-BeCJK, is an input method for the legancy BeOS, first Developed by
+BeCJK, is an input method for the legancy BeOS, first developed by
 Anthony.Lee. This copy was obtained from Andrew Bachmann.
 
 # Building
