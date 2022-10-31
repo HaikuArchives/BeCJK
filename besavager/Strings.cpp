@@ -22,7 +22,6 @@
 
 
 #include <string.h>
-#include <bsd_mem.h>
 #include <ctype.h>
 #include <stdlib.h>
 #include <sys/param.h>

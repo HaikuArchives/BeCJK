@@ -21,7 +21,6 @@
 
 #include <stdio.h>
 #include <string.h>
-#include <bsd_mem.h>
 #include <syslog.h>
 #include <ctype.h>
 

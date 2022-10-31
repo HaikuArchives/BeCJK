@@ -20,7 +20,6 @@
 // Settings
 
 #include <string.h>
-#include <bsd_mem.h>
 
 #include <storage/Path.h>
 #include <storage/Directory.h>
