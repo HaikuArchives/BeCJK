@@ -25,7 +25,6 @@
 #include <string.h>
 #include <strings.h>
 #include <sys/param.h>
-#include <bsd_mem.h>
 
 #include <Autolock.h>
 
