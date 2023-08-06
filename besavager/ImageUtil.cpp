@@ -317,7 +317,7 @@ SImage::ConvertToBitmap(const SImage* image)
 		}
 	}
 
-	bitmap->SetBits(data, (int32)(w * h * 3), 0, B_RGB32);
+	bitmap->SetBits(data, (int32)(w * h * 3), 0, B_RGB24_BIG);
 
 	delete[] data;
 
@@ -374,7 +374,7 @@ SImage::ConvertToBitmap(BRect rect)
 	}
 
 
-	bitmap->SetBits(data, (int32)(w * h * 3), 0, B_RGB32);
+	bitmap->SetBits(data, (int32)(w * h * 3), 0, B_RGB24_BIG);
 
 	delete[] data;
 
@@ -419,7 +419,7 @@ SImage::ConvertToBitmapMask(rgb_color f, rgb_color b)
 		}
 	}
 
-	bitmap->SetBits(data, (int32)(width * height * 3), 0, B_RGB32);
+	bitmap->SetBits(data, (int32)(width * height * 3), 0, B_RGB24_BIG);
 
 	delete[] data;
 
